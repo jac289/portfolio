@@ -16,12 +16,12 @@
         {
           "title": "Illustrator",
           "image": true,
-          "content": "graphicdesign/illustrator.png"
+          "content": "graphicdesign/Illustrator.png"
         },
         {
           "title": "Photoshop",
           "image": true,
-          "content": "graphicdesign/photoshop.png",
+          "content": "graphicdesign/Photoshop.png",
           "alt": "Photoshop works"
         }
       ]
