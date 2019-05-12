@@ -1,0 +1,130 @@
+/*
+ * Typography
+ */
+
+html {
+  font-size: 62.5%;
+  @include grid-media-query("palm") {
+    font-size: 53%;
+  }
+  @media (min-width: $huge) {
+    font-size: 0.42vw;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: $circular;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+  letter-spacing: 0;
+  color: $black;
+}
+
+.blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 150%;
+}
+
+.small-text {
+  font-size: 80%;
+  font-style: italic;
+}
+
+b {
+  font-weight: 500;
+}
+
+i {
+  font-style: italic;
+}
+
+.title-pr {
+  padding-right: $space;
+  @include grid-media-query("portable") {
+    padding-right: $space-md;
+  }
+  @include grid-media-query("desk") {
+    padding-right: $space-lg;
+  }
+}
+
+h1 {
+  @extend b;
+  @extend .title-pr;
+  font-family: $circular;
+  font-size: 7.5rem;
+  line-height: 110%;
+  letter-spacing: -0.2rem;
+  @include grid-media-query("palm") {
+    font-size: 5.5rem;
+  }
+  @include grid-media-query("lap") {
+    font-size: 5.5rem;
+  }
+  @include grid-media-query("desk") {
+    letter-spacing: -0.25rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  @extend b;
+  line-height: 130%;
+}
+
+h2,
+h3 {
+  letter-spacing: -0.05rem;
+}
+
+h3 {
+  @extend b;
+  font-size: 2.2rem;
+  line-height: 140%;
+  margin-bottom: 0.4rem;
+}
+
+h4 {
+  @extend b;
+  margin-bottom: 0.2rem;
+}
+
+.small {
+  font-size: 9px;
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+  @extend b;
+  @include grid-media-query("lap-up") {
+    font-size: 60%;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  @include hover {
+    text-decoration: none;
+  }
+}
+
+#nav-name,
+.card {
+  a {
+    text-decoration: none;
+  }
+}
+
+nav {
+  a {
+    text-decoration: none;
+    &.active {
+      opacity: 0.35;
+    }
+    @include hover {
+      opacity: 0.35;
+    }
+  }
+}

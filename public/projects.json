@@ -1,0 +1,224 @@
+{
+  "projects": [
+    {
+      "title": "Graphic Design",
+      "sub": "UX Research + Visual Design",
+      "url": "graphicdesign",
+      "describe": "A few experimental visual works with Photoshop + Illustrator.",
+      "icon": "graphicdesign/graphic.png",
+      "landing": "graphicdesign/graphicdesign.png",
+      "bg": "#934CB0",
+      "text": "#fff",
+      "description": "A few experimental visual works with Photoshop + Illustrator.",
+      "summary": "<p>These are some of my visual works I've made on my free time and in projects.</p>",
+    
+      "blocks": [
+        {
+          "title": "Illustrator",
+          "image": true,
+          "content": "graphicdesign/illustrator.png"
+        },
+        {
+          "title": "Photoshop",
+          "image": true,
+          "content": "graphicdesign/photoshop.png",
+          "alt": "Photoshop works"
+        }
+      ]
+    },
+    {
+      "title": "Music Festival UI",
+      "sub": "Front-End + Web Design",
+      "url": "musicfestival",
+      "describe":"Inspired by recent events and festivals and some concerns music attendees have brought up.",
+      "icon": "musicfestival/music.png",
+      "landing": "musicfestival/musiclanding.png",
+      "text": "#fff",
+      "bg": "#95C6E9",
+      "description": "Some UIs for a Music Festival Connection",
+      "summary": "<p> Inspired by recent events and festivals and some concerns music attendees have brought up.</p>",
+      "blocks": [
+         { "title": "The Design",
+          "text": true,
+          "content": "<p> This design includes connecting with friends and other people that share the same interests as you, while finding events and housing nearby."
+        },
+        { "title": "Home Screen",
+          "image": true,
+          "content": "musicfestival/homeyomp.png",
+          "alt": "Home screen",
+          "captionAfter": "This includes three different concepts for the home screen. The events are visualized to be in a carousel, with the pricing of the event listed on each event picture. On the bottom, the hotels nearby are based on the location in California and the event.</p> "
+       },
+        { "title": "Event Information",
+          "image": true,
+          "content": "musicfestival/event.png",
+          "alt": "eventinfo",
+        "captionAfter": "On each of the event pages, you can see who else is going within your connections, add it to your list, get directed to the page to buy, and see information about each artist and what genre of music they belong to."  }
+]
+    },
+    {
+      "title": "Style Finder Re-Design",
+      "sub": "Interaction Design + Web Dev",
+      "url": "stylefinder",
+      "describe":"A re-design of the F21 App with user input + Figma.",
+      "icon": "f21/f21icon.png",
+      "landing": "ergo/isometric.png",
+      "text": "#fff",
+      "bg": "#000",
+      "col": 2,
+      "description": "A re-design of the F21 App.",
+      "summary": "<p> For someone who loves to online shop, I've learned that we've become used to UI's that aren't designed at it's best capabilities. When I was using the Forever 21 app, I decided to explore different ways to make the UI more accessible and functional, while adding features I believe can be beneficial to avid users. </p>",
+      "button": {
+        "title": "View the Re-design",
+        "link": "http://figma.com/"
+      },
+        "blocks": [
+        {
+          "title": "User Testing",
+          "text": true,
+          "content": "<p>I conducted interviews focusing on the Style Finder aspect, targeting an audience of young adult females (18-21). I basically focused on the reasons on why they would interact with this portion, expectations and etc. After giving the users a set of tasks, I observed them navigating through the Style Finder. I then asked questions to allow me to gain insight of the issues at hand. I interviewed a total of 12 subjects, 6 of which never used the Forever21 app.</p>"
+        },
+        {
+          "text": true,
+          "content": "<h3> MAJOR INSIGHTS </h3><p> - Not seeing there were more categories to scroll across (80% of test subjects).</p> <p> - Clicking on a picture category, thinking it meant something else (60% of test subjects). </p> <p> - Accidentally pressing on the wrong category while scrolling across (70% of test subjects). </p>"
+        },
+        {
+          "text": true,
+          "content": "<h3> MINOR INSIGHTS </h3> <p> - Most of the subjects did not know what they really wanted, since there was still so much variety.</p> <p> - Many of the subjects wished there were a way to see how to put an outfit together. </p> <p> - Many of the subjects though Style Finder would help them see a specific style (Athleisure, Casual, etc.), not look for items themselves. </p>"
+        },
+        {
+          "title": "Re-Design || HI-FI",
+          "image": true,
+          "content": "f21/firstf21.png",
+          "captionBefore": "<h1> A. </h1> <h2> Problem: </h2> <p> Excessive Horizontal Scrolling/ Not intuitive to users that you have to keep scrolling to see other categories. </p> <h2> Redesign: </h2> <p> Adding captions to each category to eliminate that confusion. </h4> Creating the option to view all categories in one screen.</h4>",
+          "captionAfter": "<h5> In current design, F21 has no indicator to keep scrolling. A user would have to refer to previous designs they've been through to realize there's more categories. In my re-design, you could see all the categories laid out, so there's no need for excessive scrolling back and forth to see what you want to pick. Also, I changed the theme colors to match F21's current logo. </h5> "
+        } ,
+        {
+          "image": true,
+          "content":"f21/secondf21.png" ,
+          "captionBefore": "<h1> B. </h1> <h2> Problem: </h2> <p>  Unsure of categories and what they hold. </p> <h2> Redesign: </h2> Adding captions to each category to eliminate that confusion. </h4>" ,
+          "captionAfter": "<h5> In current design, F21 has no caption, relying on intuition of users. While basics like the skirt/sweater icon are easy to identify, the users I tested had trouble understanding the one circled and also did not know the shoe icon included other accessories as well. In my re-design, I made it clearer to users so they don't have to depend on their own memories of icons. I also separated the shoes and accessories into different icons. </h5>"
+        },
+        {
+          "image": true,
+          "content":"f21/thirdf21.png" ,
+          "captionBefore": "<h1> C. </h1> <h2> Problem: </h2> <p> Users wanted to be able to see certain styles (athleisure, etc.) that they liked, not individually click through items.</p> <h2> Redesign: </h2> Adding another set of categories to help users browse through and fit their personal style.</h4>",
+          "captionAfter": "<h5> In the current design, F21 has no way differentiate between different definitions of categories. I added sub-categories in which people can pick their favorite styles and see outfits that match these categories. </h5> "
+        }, 
+
+        {
+          "image": true,
+          "content":"" ,
+          "captionBefore": "<h1> D. </h1> <h2> Problem: </h2> <p> Users wanted a way to see different outfits for style inspiration and how to put the ones they find together.</p> <h2> Redesign: </h2> <p> Adding another set of categories to help users browse through and fit their personal style.</h4> <p> When pressing on a sub-category, users will be introduced to styles put together by F21 in a slideshow with the option to 'Steal the Look'.</p>",
+          "captionAfter": "<h5> In the current design, there's no visual input from how to style clothing. I decided to add a slideshow of clothing within F21 that I discovered within the app, but not incorporated in Style Finder.</h5> "
+        },
+        { "title": "Conclusion",
+          "text": true,
+          "content": "<p> After completing this re-design, F21 has implemented new features for their Style Finder. It'll be interesting to see what else can be changed and done better for F21 shoppers and new users in general. "}
+      ]
+    },
+    {
+      "title": "Moood",
+      "sub": "Brand + Web Design",
+      "url": "Moood",
+      "describe":"A mindfulness app that allows you to track your emotions & communicate them with friends.",
+      "icon": "moood/moood.png",
+      "landing" :"moood/landingm.png",
+      "text": "#fff",
+      "bg": "#E13B3B",
+      "blocks": [
+        {"title": "Summary",
+          "text": true,
+          "content": "<p>This app was brought to life by me and my teammates (Karen Chiem & Lereanne Mendoza). My role was developing & prototyping (HTML/CSS/Javascript/FIGMA).</p><p>This write-up addresses the POV, Main features, Storyboarding, Heuristic Evaluation, Wire-framing, User testing, A/B testing, and Analysis.</p>"
+        },
+        {"title": "Point of View",
+          "text": true,
+          "content": "<p>'People struggle to be honest and open with their emotions due to mental health stigma and fear of what others think. Yet, in contrast, many also want to be supportive and there for their friends without being too intrusive and blunt. Finding a way to mediate the two can lead to better emotional health for both sides.' </p>"
+        },
+        {
+          "title": "Main Features",
+          "text": true,
+          "content": "<p>The purpose of our app was to find a way to light-heartedly motivate users to connect with their friends about their emotions from a day to day basis and encourage communication to break the stigma of mental health, while being able to track emotional health and improvement.</p>"
+        },
+        {
+          "title": "1. Storyboarding",
+          "image": true,
+          "class": "left",
+          "alt": "Three storyboards",
+          "content": ["moood/storyboards.png"],
+          "captionBefore": "<p>With our point of view we established 3 different ideas/types of situations:</p> <h2> One </h2> <p> A person who needs to self-reflect and see themselves improve. </p> <h2> Two </h2> <p> Someone who wants to see how their friends might be doing without intruding.</p> <h2> Three </h2F> <p> Another who wants others to check on them, but is afraid to address the issue. </p>"
+        },
+        {
+          "title": "2. Paper Prototyping",
+          "image": true,
+          "content":"moood/paperprotom.png",
+          "captionBefore": "<p>Based on our ideas in storyboarding, we focused on visualizing the information architecture and functionality. <h3> Prototypes <h3> <h4> Based on the storyboard idea: </h4> <p> * One who needs to self-reflect and see improvement.​ </p> <p> * Someone who wants to see how their friends might be doing without intruding.</p> <p>Another who wants others to check on them, but is afraid to address the issue. </p>",
+          "captionAfter": "A few screens of the paper prototypes we built."
+
+        },
+        {
+          "title": "3. Heuristic Evaluation",
+          "image": true,
+          "content": "moood/heuristic.png",
+          "alt": "heuristics"
+        },
+        {
+          "title": "4. Revisit POV",
+          "text": true,
+          "content": "<h3>User Task:</h3> <p> If our app didn’t exist, users could take the initiative to self-journal or check up on their friends frequently themselves. However, it’s hard at times for people to express their emotions. Our app is to introduce a fun, subtle way to do so and gently encourage users.</p> <h3> Features of Unique Interaction​:</h3> <p> * Emotion Tracker (Graph)</p><p> * Journal </p><p> * Motivational Quotes </p><p> * Chats that allow you to view other people’s graphs.</p>"
+        },
+
+        {
+          "title": " 5. Wireframing",
+          "image": true,
+          "alt": "Wireframe 1",
+          "content": "moood/figmaprototype.png",
+          "captionBefore": "<h4>Ideas of Screens + Flow on Figma</h4>"
+        },
+          {
+          "title": "6. User Testing",
+          "image": true,
+          "alt": "",
+          "content":"moood/testing.png",
+          "captionBefore": "<p>Our team chose these people for user testing because although anyone of age can be considered to be a part of our user base, we wanted to focus on college students because they may find the most use out of this app. We wanted to specifically know the level of interest users had in emotional self-reflection and improvement, and also whether they'd be interested in tracking and helping their friends as well.</p>"
+        },
+          {
+          "image": true,
+          "alt": "",
+          "content":"moood/testing2.png",
+          "captionAfter": "<h3> General Patterns in User Testing​ </h3> <p> * Still problems scrolling through whole app - Users did not enjoy scrolling through apps and sometimes missed features. There is need for better compartmentalization and information architecture.</p> <p> * Users are easily navigating through the app - Many used the navigation bar to go through the app, since it was fixed and labeled, which many users thought was helpful.</p> <p> * Confusion about the Emotional Graph - Users were wondering about how these moods would be accessed and put in place into the graph; was it from changing of the avatar or something else?</p>"
+        },
+        {
+          "text": true,
+          "content": "<p> <h3> List of Changes </h3> <p> - Creating an input for the Health Journal that users can interact with and encourage them to update their journal, along with implementing a journal entry log where users can look back at whenever necessary (* currently not implemented). <p> - Moving the “Reminder of the Day” to the top of the screen so it appears more noticeable, making the interface look cleaner. Also, randomizing reminders rather than having a static one.</p> <p> - Adding a function where people can add their own helpful “Reminder of the Day”.</p> <p> - Changing the ‘send message’ button into something more recognizable. </p> "
+        },
+          {
+          "title": "7. A/B Testing",
+          "image": true,
+          "content": "moood/B.png"
+        },
+        {
+          "text": true,
+          "content": "<h3> Design A </h3> <p> - Will allow users to set their profile picture & snap a shot of their own face depending on mood. </p> <p> - Keep journaling experience more succinct.</p> <p>Reminder of the day is set randomly.</p>"
+ },
+{ 
+          "text": true,
+          "content": "<h3> Design B </h3> <p> - Users are only allowed to change their avatars into a certain mood. </p> <p> - Add signifier to journal (a pop-up modal) to encourage usage.</p> <p>Reminder of the day can be set by user, while still getting the old reminder.</p> <p> Change of visual design.</p>"
+ },
+ { 
+          "text": true,
+          "content": "<h3> Results & Implementations </h3> <p> - Our B route has almost 3 times as many testers as our A route. However, despite the difference, the ratio of clicks/didn’t click is about the same for both options. From our quantitative data, it is clear that there is not a statistically significant difference between the two conditions we were testing and that there must be some other confounding variable capable of  influencing user engagement/click conversions. </p> <p> - Since both options had very similar performance, making conversions roughly 30% of the time, we will integrate the option to select an avatar from a selection of avatars (Route B) with the option to upload your own (Route A). This move is also supported by past feedback from user testing and other testing feedback from multiple studio sessions. We also will include all of Design B, removing the other two points of Design A. </p>"
+   },
+   {
+          "title": "8. Compile & Analyze",
+          "image":true,
+          "content": "moood/chisquare.png"
+        },
+  {
+          "title": "9.Show & Tell",
+          "text": true,
+          "content": "<p>Since our app only sorts neighborhoods and does not show listings or collect any personal data, we could afford to forgo the professional look. So, we took the opposite approach and used the theme of cute, burrowing animals to establish a cozy and welcoming atmosphere. Because Burow’s search functionality centers around neighborhoods instead of individual homes, the animals also serve to reflect community.</p>"
+        }
+      ]
+    }
+  ]
+}

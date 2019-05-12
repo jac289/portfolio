@@ -1,0 +1,29 @@
+#about-photo {
+  margin-bottom: $space;
+  width: 100%;
+  min-height: 28rem;
+  max-height: 52rem;
+  height: 30vw;
+  background-size: cover;
+  background-image: url("../images/site/me/me.jpg");
+  background-position: center right;
+  //filter: saturate(0) contrast(125%);
+  @include grid-media-query("portable") {
+    background-image: url("../images/site/me/me-horizontal.png");
+  }
+}
+
+#about-tagline {
+  padding-right: $space;
+  white-space: nowrap;
+  @media screen and (max-width: 750px) {
+    white-space: initial;
+  }
+}
+
+.bio {
+  p {
+    // Margin under p
+    @extend .mb;
+  }
+}

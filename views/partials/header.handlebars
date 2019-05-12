@@ -1,0 +1,56 @@
+<header>
+  <div class="grid mb">
+    <div class=" grid__item palm--two-twelfths lap-up--two-eighths">
+    </div>
+    <div class="grid__item palm--ten-twelfths lap-up--six-eighths">
+      <nav class="nav-horizontal">
+        <ul>
+          <li class="horizontal" >
+            <h4 style = "color: #FECACA; padding: 10px; border: 3px solid #FECACA;border-radius: 5px"> <a href="/" {{#if_eq url ""}} class="active" {{/if_eq}}>Design</a></h4>
+          </li>
+          <li class="horizontal">
+            <h4  style = "color: #FECACA; padding: 10px; border: 3px solid #FECACA;border-radius: 5px"><a href="/about" {{#if_eq url "about"}} class="active" {{/if_eq}}> More About Me</a></h4>
+          </li>
+          <li class="horizontal line">
+            <div class="bar"></div>
+          </li>
+
+          <li class="vertical">
+            <h4  style = "color: #FECACA; padding: 10px; border: 3px solid #FECACA;border-radius: 5px"><a href="/contact" {{#if_eq url "contact"}} class="active" {{/if_eq}}>Contact</a></h4>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  {{#if_eq url "" }}
+
+<div id ="banner-palm" class ="h1-container lap-up-hide">
+<h1>Jaclyn is a UCSD Design student.</h1>
+</div>
+  <div class="home-header-container">
+    <div class="grid">
+      <div id="currently-previously" class="hide">
+        <div class="grid__item desk--one-half">
+        </div>
+        <div class="grid__item desk--one-half">
+        </div>
+
+
+        <div class="grid__item lap-up-hide">
+          <h4>View My Work ↓</h4>
+        </div>
+      </div>
+
+    </div>
+    <div class="grid mb-md palm-hide">
+      <div class="grid__item palm-hide">
+          <img class="card-img-hover" src="images/cover.png"></div>
+    </div>
+  </div>
+  {{/if_eq}}
+  {{#if h1}}
+  <div class="h1-container">
+    <h1>{{{ h1 }}}</h1>
+  </div>
+  {{/if}}
+</header>

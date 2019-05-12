@@ -1,0 +1,53 @@
+footer {
+  @extend .layout;
+  height: $footer-height-palm;
+  @include grid-media-query("palm") {
+    text-align: center;
+  }
+  @include grid-media-query("lap") {
+    height: $footer-height-lap;
+  }
+  @include grid-media-query("desk") {
+    height: $footer-height-desk;
+  }
+}
+
+#socials {
+  @include grid-media-query("palm") {
+    margin-top: 1.5rem;
+  }
+  @include grid-media-query("lap") {
+    text-align: right;
+  }
+  @include grid-media-query("desk") {
+    text-align: right;
+  }
+}
+
+.socials-svg {
+  fill: currentColor;
+}
+
+#socials-list {
+  margin-top: -0.1rem;
+  li {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: 0.8rem;
+      @include grid-media-query("lap") {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  svg {
+    height: 2.6rem;
+    transition: transform 0.6s;
+  }
+  a {
+    @include hover {
+      svg {
+        transform: translateY(-1.5rem);
+      }
+    }
+  }
+}

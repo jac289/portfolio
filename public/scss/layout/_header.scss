@@ -1,0 +1,182 @@
+$dot: 1.3rem;
+
+#nav-name {
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  margin-left: 2rem;
+  a {
+    padding: 1rem 1rem 1rem 3rem;
+    margin-left: -3rem;
+    &::before {
+      content: "";
+      margin-left: -2rem;
+      position: absolute;
+      width: $dot;
+      height: $dot;
+      box-sizing: border-box;
+      top: 0.71rem;
+      border-radius: $dot;
+      border: 1px solid currentColor;
+    }
+    @include grid-media-query(desk) {
+      border-width: 0.1rem;
+    }
+    @include hover {
+      &::before {
+        background-color: currentColor;
+      }
+    }
+  }
+}
+
+#nav-name,
+nav {
+  z-index: 9999;
+}
+
+nav {
+  text-align: right;
+  li {
+    display: inline-block;
+  }
+}
+
+.nav-horizontal {
+  margin-top: 0.1rem;
+  white-space: nowrap;
+  .line {
+    display: none;
+  }
+  li:not(:last-child) {
+    margin-right: 1.5rem;
+    @include grid-media-query(lap-up) {
+      margin-right: 2.5rem;
+    }
+  }
+}
+
+.nav-corner {
+  position: relative;
+  li {
+    .bar {
+      width: 3rem;
+      height: 3rem;
+      border-top: 1px solid currentColor;
+      border-right: 1px solid currentColor;
+      @include grid-media-query(desk) {
+        border-width: 0.1rem;
+      }
+    }
+    &.horizontal {
+      .bar {
+        margin-top: 1rem;
+      }
+    }
+    &.horizontal:not(.line) {
+      position: absolute;
+      right: 14rem;
+    }
+    &.horizontal:not(.line) ~ .horizontal:not(.line) {
+      right: 5.5rem;
+    }
+
+    &.vertical.line {
+      position: absolute;
+      transform: rotate(90deg);
+      transform-origin: left;
+    }
+
+    &.vertical:not(.line) {
+      position: absolute;
+      transform: rotate(90deg);
+      top: 5.5rem;
+      transform-origin: left;
+    }
+    &.vertical:not(.line) ~ .vertical:not(.line) {
+      top: 15rem;
+    }
+  }
+  a {
+    padding: 0.8rem 1.5rem;
+    @include hover {
+      //padding: 0.4rem 1.7rem 0.8rem;
+    }
+  }
+}
+
+#header-container {
+  position: relative;
+}
+
+#header {
+  @extend .layout;
+  position: relative;
+  padding-top: $top-bottom-space;
+  padding-bottom: 3.4rem;
+  @include grid-media-query(lap-up) {
+    padding-bottom: $space-md;
+  }
+
+  .h1-container {
+    margin-top: 8rem;
+    @include grid-media-query(lap-up) {
+      margin-top: $space-lg;
+    }
+    &-corner {
+      height: 100%;
+      padding-right: $space-md; // adjust for breakpoints
+      display: flex;
+      align-items: flex-end;
+      min-height: 17.5rem;
+      @include grid-media-query(lap) {
+        min-height: 18rem;
+      }
+      @include grid-media-query(desk) {
+        min-height: 18.5rem;
+      }
+    }
+  }
+  h1 {
+    padding-bottom: 0;
+  }
+}
+
+#home-header {
+  @extend #header;
+  padding-bottom: 0 !important;
+}
+
+.home-header-container {
+  margin-top: 2.7rem;
+  @include grid-media-query(lap) {
+    //margin-top: 0.7rem;
+  }
+  @include grid-media-query(desk) {
+    //margin-top: 11.5rem;
+  }
+}
+
+#currently-previously {
+  margin-bottom: 3.6rem;
+  padding-right: $space-md;
+
+  @include grid-media-query(portable) {
+    .grid__item {
+      &:not(:last-child) {
+        margin-bottom: $space;
+      }
+    }
+  }
+}
+/*
+#home-page {
+
+  #header {
+    padding-bottom: $top-bottom-space;
+    @include grid-media-query(lap-up) {
+      height: 25rem;
+    }
+  }
+}
+*/

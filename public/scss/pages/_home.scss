@@ -1,0 +1,85 @@
+#home-page header,
+#banner-container {
+  //color: white;
+  //color: #ffd0d0;
+}
+
+#bg {
+  //background-color: #fcdddb;
+  //background-color: $blue;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+#banner-container {
+  color: $pink;
+  background-color: $blue;
+  @include hover {
+    color: $blue;
+    background-color: $pink;
+  }
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-top: 0.5rem;
+  height: 35vw;
+  @include grid-media-query(desk) {
+    height: 35rem;
+    height: 25vw;
+  }
+  @media (min-width: $big) {
+    font-size: 6.3rem;
+    height: 45rem;
+  }
+}
+
+#banner {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  user-select: none;
+  font-size: 4vw;
+  letter-spacing: -0.15vw;
+  @extend b;
+  @include grid-media-query("lap") {
+    top: -4rem;
+  }
+  @include grid-media-query("desk") {
+    font-size: 3.5vw;
+  }
+  @media (min-width: $big) {
+    font-size: 6.3rem;
+  }
+}
+
+#banner-palm {
+  margin: $space-md 0;
+}
+
+#title {
+  h1 {
+    @include grid-media-query("palm") {
+      padding-right: 0;
+    }
+  }
+}
+
+#work-block {
+  //margin-top: calc(#{$top-bottom-space} + 1rem);
+  @include grid-media-query("desk") {
+    // margin-top: 25rem;
+  }
+  img {
+    // filter: saturate(105%) brightness(95%);
+  }
+}

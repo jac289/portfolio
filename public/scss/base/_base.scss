@@ -1,0 +1,71 @@
+body {
+  background-color: #fefefe;
+}
+
+.layout {
+  //max-width: 1024px;
+  max-width: 140rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  @include grid-media-query("palm") {
+    width: 85%;
+  }
+  @mixin huge {
+    max-width: 140rem;
+  }
+}
+
+#content {
+  @extend .layout;
+  //padding-top: 6%;
+  padding-bottom: $space-md;
+  @include grid-media-query("lap") {
+    padding-bottom: $space-lg;
+  }
+  @include grid-media-query("desk") {
+    padding-bottom: $space-lg;
+  }
+}
+
+/*
+footer {
+  //margin-top: $space-md;
+
+  @include grid-media-query("lap") {
+    //margin-top: $space-lg;
+  }
+  @include grid-media-query("desk") {
+    //margin-top: $space-lg;
+  }
+}
+ */
+
+.body-wrapper {
+  min-height: calc(100vh - #{$footer-height-palm});
+  @include grid-media-query("lap") {
+    min-height: calc(100vh - #{$footer-height-lap});
+  }
+  @include grid-media-query("desk") {
+    min-height: calc(100vh - #{$footer-height-desk});
+  }
+}
+
+.top {
+  @extend .mb-md;
+  min-height: 17.7rem;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  //position: absolute;
+  //top: $top-bottom-space;
+  .grid {
+    width: 100%;
+  }
+  @include grid-media-query("lap") {
+    min-height: 18.5rem;
+  }
+  @include grid-media-query("desk") {
+    min-height: 18.7rem;
+  }
+}

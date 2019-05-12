@@ -1,0 +1,26 @@
+.card {
+  &-img {
+    width: 100%;
+    transition: opacity 0.3s;
+    &.darken {
+      filter: brightness(98%) saturate(105%);
+    }
+    @include hover {
+      opacity: 0.07;
+    }
+  }
+}
+
+.card-img-container {
+  line-height: 0;
+  margin-bottom: $space;
+  @include shrink-on-hover;
+}
+
+.card-sub {
+  @extend .small;
+  //color: $dark-pink;
+  color: darken($blue, 5%);
+  //margin: 0 0 0.05rem;
+  margin: 0.8rem 0 0 0;
+}

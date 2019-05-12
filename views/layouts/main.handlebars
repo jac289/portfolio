@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{description}}" />
+  <meta name="keywords" content="Jaclyn Chin, graphic design, interaction design, ux design, product design, visual design, ux engineering">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://jaclynchin.com/images/site/preview.png">
+  <meta property="og:url" content="http://jaclynchin.com/{{url}}">
+  <meta property="og:description" content="{{description}}">
+
+
+  <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- main.css -->
+  <link href="/css/main.css" rel="stylesheet" type="text/css">
+
+  <title>{{title}}</title>
+</head>
+
+<body {{#if home}} id="home-page" {{/if}} style="background-color: {{bg}} !important; color: {{text}} !important; --color: {{text}}">
+  <div class="body-wrapper">
+    <div id="header-container">
+      {{#if home}}
+      <canvas id="bg">
+
+      </canvas>
+      {{/if}}
+      <div id="{{#if home}}home-{{/if}}header">
+        {{> header }}
+      </div>
+    </div>
+    <div id="content">
+      {{{body}}}
+    </div>
+
+
+</body>
+
+</html>

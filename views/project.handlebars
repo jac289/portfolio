@@ -1,0 +1,95 @@
+{{#with currProject}}
+<div class="project-page" style="--text: {{#lower_opacity text}}{{/lower_opacity}}">
+ {{#ifCond landing "!=" "none"}}
+      <img src="/images/{{landing}}" alt="{{title}}">
+      {{/ifCond}}
+  <div class="grid intro">
+    <div class="grid__item desk--one-whole description">
+      {{#if summary}}{{{summary}}}{{else}}<p>{{description}}</p>{{/if}}
+      {{#if button}}
+      <a href="{{button.link}}" target="_blank" class="btn mt mb" style="--btn-bg: {{text}}; --btn-text: {{bg}}">{{button.title}}</a>
+      {{/if}}
+    </div>
+    <div class="grid__item desk--one-half">
+      <div class="grid mb-sm">
+        {{#each details}}
+   <div class="grid__item mb-3 portable--mb-2">
+    </div>
+        <div class="grid__item {{#if wide}}desk--two-thirds portable--one-whole {{else}}desk--one-third portable--one-half {{/if}} mb-xs">
+
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div> <!-- /.intro -->
+
+
+
+  <!-- CONTENT BLOCKS START HERE -->
+  {{#each blocks}}
+  {{#unless hide}}
+  <div class="grid block {{#if title}} has-title{{/if}}">
+    <div class=" grid__item desk--one-whole">
+      <h2 style="color:white; font-size:40px">{{title}}</h1>
+    </div>
+
+    <div class="grid__item desk--one-whole">
+
+      {{#if text}}
+      <div class="text">
+        {{{content}}}
+      </div>
+      {{/if}}
+
+      {{#if image}}
+      {{{captionBefore}}}
+      {{#if link}}<a href="{{link}}" target="_blank">{{/if}}
+        <img src="/images/{{content}}" class="{{#if link}}image-link{{/if}} {{#if captionBefore}}mt{{/if}} {{#if captionAfter}}mb{{/if}}"
+          alt="{{alt}}">{{#if
+        link}}</a>{{/if}}
+      {{{captionAfter}}}
+      {{/if}}
+
+      {{#if blockquote}}
+      {{{captionBefore}}}
+      <p class="blockquote">{{{content}}}</p>
+      {{{captionAfter}}}
+      {{/if}}
+
+      {{#if pdf}}
+      {{{captionBefore}}}
+      <iframe class="pdf {{#if captionBefore}}mt{{/if}} {{#if captionAfter}}mb{{/if}}" src="{{content}}"></iframe>
+      {{{captionAfter}}}
+      {{/if}}
+
+      {{#if palette}}
+      {{{captionBefore}}}
+      <div class="swatches" style="grid-template-columns: {{#each content}}1fr {{/each}};">
+        {{#each content}}
+        <div class="swatch" style="--color: {{text}}; {{#if ../color}}color: {{../color}}{{/if}}">
+          <div class="wrapper">
+            <div class="sample" style="background-color: {{this}}">
+            </div>
+            <div class="hex">
+              {{this}}
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+      {{{captionAfter}}}
+      {{/if}}
+
+    </div>
+  </div>
+
+  {{/unless}}
+  {{/each}}
+
+</div> <!-- /.project-page -->
+
+<div class="grid">
+
+</div>
+
+{{/with}}

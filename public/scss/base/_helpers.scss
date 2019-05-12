@@ -1,0 +1,48 @@
+.mt {
+  margin-top: $space;
+}
+
+.mt-md {
+  margin-top: $space-md;
+}
+
+.mt-lg {
+  margin-top: $space-lg;
+}
+
+.mb-xs {
+  margin-bottom: $space-xs;
+}
+
+.mb {
+  margin-bottom: $space;
+}
+
+.mb-md {
+  margin-bottom: $space-md;
+}
+
+.mb-lg {
+  margin-bottom: $space-lg;
+}
+
+.pr-md {
+  padding-right: $space-md;
+}
+
+.pr-lg {
+  padding-right: $space-lg;
+}
+
+@each $breakpoint in $breakpoints {
+  $name: nth($breakpoint, 1);
+  @include grid-media-query($name) {
+    .#{$name}-hide {
+      display: none !important;
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}

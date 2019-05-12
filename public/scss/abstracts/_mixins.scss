@@ -1,0 +1,20 @@
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin shrink-on-hover {
+  transition: transform 0.3s;
+  @include hover {
+    transform: scale(0.95);
+  }
+}
+
+@mixin huge {
+  @media (min-width: $huge) {
+    @content;
+  }
+}
