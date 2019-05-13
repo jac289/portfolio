@@ -61,7 +61,7 @@
       "url": "stylefinder",
       "describe":"A re-design of the F21 App with user input + Figma.",
       "icon": "f21/f21icon.png",
-      "landing": "ergo/isometric.png",
+      "landing": "f21/f21header.jpg",
       "text": "#fff",
       "bg": "#000",
       "col": 2,
@@ -69,7 +69,7 @@
       "summary": "<p> For someone who loves to online shop, I've learned that we've become used to UI's that aren't designed at it's best capabilities. When I was using the Forever 21 app, I decided to explore different ways to make the UI more accessible and functional, while adding features I believe can be beneficial to avid users. </p>",
       "button": {
         "title": "View the Re-design",
-        "link": "http://figma.com/"
+        "link": "https://www.figma.com/file/expryEDQXTyDCgwOIZRpkgTB/Untitled?node-id=1%3A6"
       },
         "blocks": [
         {
@@ -106,8 +106,9 @@
         }, 
 
         {
-          "image": true,
-          "content":"" ,
+          "video": true,
+          "content":"f21/f214.mp4" ,
+          "type": "video/mp4",
           "captionBefore": "<h1> D. </h1> <h2> Problem: </h2> <p> Users wanted a way to see different outfits for style inspiration and how to put the ones they find together.</p> <h2> Redesign: </h2> <p> Adding another set of categories to help users browse through and fit their personal style.</h4> <p> When pressing on a sub-category, users will be introduced to styles put together by F21 in a slideshow with the option to 'Steal the Look'.</p>",
           "captionAfter": "<h5> In the current design, there's no visual input from how to style clothing. I decided to add a slideshow of clothing within F21 that I discovered within the app, but not incorporated in Style Finder.</h5> "
         },

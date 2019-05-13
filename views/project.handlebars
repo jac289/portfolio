@@ -50,6 +50,16 @@
       {{{captionAfter}}}
       {{/if}}
 
+ {{#if video}}
+      {{{captionBefore}}}
+      <video controls loop>
+        <source src="/images/{{content}}" class="{{#if link}}image-link{{/if}} {{#if captionBefore}}mt{{/if}} {{#if captionAfter}}mb{{/if}}"
+          type="{{type}}">{{#if
+        link}}</a>{{/if}}
+        </video>
+      {{{captionAfter}}}
+      {{/if}}
+
       {{#if blockquote}}
       {{{captionBefore}}}
       <p class="blockquote">{{{content}}}</p>
