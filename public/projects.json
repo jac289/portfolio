@@ -59,6 +59,32 @@
         "captionAfter": "On each of the event pages, you can see who else is going within your connections, add it to your list, get directed to the page to buy, and see information about each artist and what genre of music they belong to."  }
 ]
     },
+      {
+      "title": "DAILY UI & PERSONAL",
+      "sub": "Interaction Design + Web Dev",
+      "url": "dailyui",
+      "describe":"The daily UI challenge and other works/things I do on my free time.",
+      "icon": "ui/ui.png",
+      "landing" : "ui/sushilanding.png",
+      "text": "#fff",
+      "bg": "#3CB3B8",
+      "col": 2,
+      "description": "The daily UI challenge.",
+      "summary": "<p> I decided to take the Daily UI challenge in order to improve my techniques and garner advice/lessons from other design professionals! I'm also using this as a way to get more comfortable with certain programs, such as XD and Invision. </p>",
+        "blocks": [
+        {
+          "title": "First Day.",
+          "image": true,
+          "content": "ui/desktop.png" ,
+          "captionAfter": "<p> This is my experimentation with dark UI and compact boxes, for desktop and tablet. I wanted to narrow down the things visible in one checkout screen, to make it less over-whelming or users, only maintaining the important items so users can access errors within the item orders and clearly see the prices. </p>"
+        },
+         {
+          "image": true,
+          "content": "ui/mobile.png" ,
+          "captionAfter": "<p> I made one suitable for mobile. It's easier to use saved cards and save cards, when wanting to use a new card. I wanted to use a larger font, so the text would show up easier, making it possible for me to utilize the gradient text. </p>"
+        }
+      ]
+    },
     {
       "title": "Style Finder Re-Design",
       "sub": "Interaction Design + Web Dev",
